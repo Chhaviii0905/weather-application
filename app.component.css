@@ -1,0 +1,89 @@
+/* Root component styles */
+:host {
+    display: block;
+    background-image: url('../assets/white.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  /* app.component.css */
+
+.forecast-cards {
+    display: flex;
+    flex-wrap: nowrap; /* Ensure cards don't wrap to the next line */
+    overflow-x: auto; /* Enable horizontal scrolling if needed */
+    padding: 10px 0; /* Optional: Add padding for spacing */
+  }
+  
+  /* Styles for the forecast card component */
+  .card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 200px;
+    text-align: center;
+    background-color: #f2f2f2;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-right: 20px; /* Add space between cards */
+  }
+  
+  h3 {
+    margin-top: 0;
+  }
+  
+  p {
+    margin: 8px 0;
+  }
+  /* app.component.css */
+
+#current-weather {
+    text-align: center; /* Center align the content */
+  }
+  
+  #current-weather p {
+    margin-bottom: 10px; /* Optional: Add some space between paragraphs */
+  }
+  
+  #current-weather p.temperature {
+    font-size: 24px; /* Adjust the font size as needed */
+  }
+  /* app.component.css */
+
+#current-weather {
+    text-align: center;
+    margin-bottom: 20px; /* Add some space below the section */
+  }
+  
+  .weather-info {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 16px;
+    width: 300px; /* Adjust width as needed */
+    margin: 0 auto; /* Center the weather info */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .weather-info p {
+    margin-bottom: 10px;
+  }
+  
+  .temperature {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .sunrise-sunset p {
+    margin-bottom: 5px;
+  }
+  

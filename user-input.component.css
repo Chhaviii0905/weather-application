@@ -1,0 +1,28 @@
+#user-input {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  
+  #user-input input[type="text"] {
+    padding: 0.5rem;
+    font-size: 1rem;
+  }
+  
+  #user-input button {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    background-color: #06305c;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+  
+  #user-input button:hover {
+    background-color: #0056b3;
+  }
+  
+  #user-input label {
+    margin-left: 1rem;
+    font-size: 0.8rem;
+  }
+  

@@ -1,0 +1,19 @@
+<app-header></app-header>
+<app-user-input (citySelected)="onCitySelected($event)"></app-user-input>
+
+<section id="current-weather">
+  <h2>{{ cityName }} Current Weather</h2>
+  <p>Temperature: {{ currentTemperature }} {{ isCelsius ? '°C' : '°F' }}</p>
+  <p>Weather: {{ currentWeatherDescription }}</p>
+</section>
+
+<section id="forecast">
+  <h2>{{ cityName }} 7 Days Forecast</h2>
+  <div class="forecast-cards">
+    <app-forecast-card *ngFor="let day of forecast"
+                        [date]="day.date"
+                        [temperature]="day.temperature"
+                        [weatherDescription]="day.weatherDescription">
+    </app-forecast-card>
+  </div>
+</section>
